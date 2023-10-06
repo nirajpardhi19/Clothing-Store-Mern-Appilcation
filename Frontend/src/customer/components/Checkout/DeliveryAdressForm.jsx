@@ -17,7 +17,7 @@ export default function DeliveryAddressForm() {
   const { auth } = useSelector(store => store);
 
 
- console.log("auth", auth);
+// console.log("auth", auth);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -47,26 +47,6 @@ export default function DeliveryAddressForm() {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} lg={3}>
-        {/* <Box className="border rounded-md shadow-md h-[30.5rem] overflow-y-scroll ">
-        
-            <div className="p-5 py-7 border-b cursor-pointer">
-              {" "}
-              {auth.user?.addresses.map((item)=><AddressCard address={item}/>) }
-             
-                <Button
-                  sx={{ mt: 2 }}
-                  size="large"
-                  variant="contained"
-                  color="primary"
-
-                //   onClick={()=>handleCreateOrder(item)}
-                >
-                  Deliver Here
-                </Button>
-              
-            </div>
-          
-        </Box> */}
       </Grid>
       <Grid item xs={12} lg={7}>
         <Box className="border rounded-md shadow-md p-5">
