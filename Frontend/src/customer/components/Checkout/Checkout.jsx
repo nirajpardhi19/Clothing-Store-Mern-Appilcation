@@ -25,30 +25,7 @@ export default function Checkout() {
   const step = queryParams.get('step');
   const navigate=useNavigate();
  
-console.log("step",step)
-
-
-//   const handleNext = () => {
-//     let newSkipped = skipped;
-   
-
-//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-//     setSkipped(newSkipped);
-//   };
-
-//   const handleBack = () => {
-//     navigate(`/checkout?step=${step-1}`)
-//   };
-
-
-
-//   const handleReset = () => {
-//     setActiveStep(0);
-//   };
-
-//   const handlePayment=()=>{
-//     console.log("handle payment")
-//   }
+//console.log("step",step)
 
   return (
     <Box className="px-5 lg:px-32 " sx={{ width: "100%" }}>
@@ -93,11 +70,7 @@ console.log("step",step)
 
           <div className="my-5">
             {step == 2 ? <DeliveryAdressForm />:<OrderSummary/>}
-          </div>
-
-          {/* <AddDeliveryAddressForm handleNext={handleNext} /> */}
-
-          
+          </div>   
         </React.Fragment>
       )}
     </Box>
