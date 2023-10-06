@@ -110,22 +110,9 @@ function Footer() {
         </Grid>
          <Grid className="pt-20" items xs={12}>
             <Typography variant="body2" component="p" align="center">
-                &copy; 2023 My Comapany. All rights reserved.
+                &copy; 2023 Niraj Pardhi. All rights reserved.
             </Typography>
-            <Typography variant="body2" component="p" align="center">
-                Made with Love by me.
-            </Typography>
-            <Typography variant="body2" component="p" align="center">
-                Icons made by{' '}
-                <Link href="https://www.freepik.com" color="inherit" underline="always">
-                    Freepik
-                </Link>{" "}
-                from{' '}
-                Icons made by{' '}
-                <Link href="https://www.flaticon.com/" color="inherit" underline="always">
-                    www.flaticon.com
-                </Link>
-            </Typography>
+           
 
 
          </Grid>
