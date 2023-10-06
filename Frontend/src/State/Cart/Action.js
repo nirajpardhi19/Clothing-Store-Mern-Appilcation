@@ -33,7 +33,7 @@ export const getCart = () => async (dispatch) => {
 };
 
 export const addItemToCart = (reqData) => async (dispatch) => {
-    console.log("req data ",reqData)
+   // console.log("req data ",reqData)
     dispatch({ type: ADD_ITEM_TO_CART_REQUEST });
   try {
     const { data } = await api.put(`/api/cart/add`, reqData);
@@ -72,7 +72,7 @@ export const removeCartItem = (cartItemId) => async (dispatch) => {
     dispatch({ type: UPDATE_CART_ITEM_REQUEST });
     try {
       const { data } = await api.put(`/api/cart_items/${reqData.cartItemId}`,);
-  console.log("udated cartitem ",data)
+//  console.log("udated cartitem ",data)
       dispatch({
         type: UPDATE_CART_ITEM_SUCCESS,
         payload: data,
